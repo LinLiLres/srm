@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "students": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "dynamiczone",
+      "components": [
+        "name.name"
+      ]
+    }
+  }
+}

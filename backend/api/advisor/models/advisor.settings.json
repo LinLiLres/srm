@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advisors",
+  "info": {
+    "name": "advisor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "students": {
+      "via": "advisor",
+      "collection": "student"
+    }
+  }
+}
